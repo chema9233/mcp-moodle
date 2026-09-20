@@ -1,0 +1,23 @@
+{
+  "name": "moodle-tutor-mcp-server",
+  "version": "1.0.0",
+  "description": "Servidor MCP de solo lectura para consultar contenidos, cursos y progreso de alumnos en Moodle (Fluentia).",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "express": "^4.21.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.9.0",
+    "typescript": "^5.6.3",
+    "tsx": "^4.19.2"
+  }
+}
